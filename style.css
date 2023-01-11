@@ -1,0 +1,364 @@
+body{
+    background: #1E1E1E;
+    overflow-x: hidden;
+}
+.cursor{
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;   
+}
+.navbar-items ul {
+    margin: auto;
+}
+.navbar-items ul li a, .bag-user{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+.nav-item a{
+    position: relative;
+    padding: 0px 5px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.nav-item a:before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    top: 100%;
+    background-color: rgb(231, 95, 46);
+    transition: all 0.5s linear;
+    color: white;
+}
+.nav-item a:hover:before{
+    width: 85%;
+    color: white; 
+}
+span i{
+    width: 10px;
+    font-size: 10px;
+}
+.navbar-toggler {
+    background-color: white;       
+}
+.nav-link:focus, .nav-link:hover {
+    color: white;
+}
+
+/* Banner Section */
+.banner-section{
+    margin-top: 10%;
+}
+.banner-text {
+    color: white;
+    text-align: center;
+    width: 500px;
+    margin-top: 20px;
+}
+.banner-text p{
+    color: rgb(255, 255, 255);
+}
+.banner-img1 {
+    align-items: flex-start;
+    justify-content: flex-end;
+    display: flex;
+    width: 400px;
+}
+.banner-text h4{
+    font-family: 'Grand Hotel', cursive;
+    font-weight: 400;
+    font-size: 53px;
+}
+.banner-img2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.nav-icons-side ul li a{
+    color: white;  
+}
+.nav-icons-side ul li{
+    align-items: stretch;
+    top: 90%;
+}
+.banner-img3 {
+    margin-right: -15%;
+    display: flex;
+    justify-content: flex-end;
+}
+.banner-img1 img{
+    align-items: center;
+    position: relative;
+    animation-name: firstImages;
+    animation: firstImages 10s infinite;
+    transition: 3s;
+}
+@keyframes firstImages{
+    0%{
+      transform: rotate(180deg);         
+    } 
+}
+.list-group-item img{
+    margin-left: -20px;
+}
+.text-box {
+    margin-top: -60px;
+    align-items: center;    
+}
+.text-box .slider-img{
+    width: 150px;
+}
+.text-box .slider-img{
+    width: 150px;
+}
+.text-box .search-bar{
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    background-color: #2d2d2d;
+    padding: 10px 20px;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    margin: auto;    
+}
+.text-box .search-bar input{
+    background: transparent;
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    color: #a7a2a2;
+    background-color: #2d2d2d; 
+}
+::placeholder{
+    color: #a7a2a2; 
+}
+.text-box .search-bar button{
+        border: solid 1px #fc2547;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        overflow: hidden;
+        transition: .8s ease;
+        text-decoration: none;
+        background-image: linear-gradient(to right,#fc2547 0%, #ff5a00 50%, #fc2547 100%);
+        background-size: 200% auto;  
+        padding: 15px 20px; 
+        border-radius: 60px;
+}
+/* Food Aboute */
+.food-aboute, .card-bg{
+    background-color: #000;
+}
+.text-area p{
+    color: #A02925;
+}
+.text-area h1{           
+    color: #ffffff;
+    font-family: 'Grand Hotel', cursive;
+    font-size: 72px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.user-field{   
+    color: #ffffff;
+    opacity: .7;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+.user-div {
+    cursor: pointer;
+}
+.user-div i{
+    color: red;
+    font-size: 30px;
+}
+.user-div:hover{
+   padding: 10px;
+}
+
+/* Product Card */
+.cardInfo p{
+    color: #747474;
+}
+.name-star .name{
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+.star .d-flex li{
+    list-style: none;
+    text-decoration: none;
+    color: #FFC13C;
+    font-size: 14px;
+}
+
+.name-star{
+    justify-content: space-between;
+}
+.card:hover .name-star .name{
+    color: rgb(248, 57, 57);
+}
+.card-img{
+    overflow: hidden;
+}
+.card-img img{
+    transition: all 1.5s ease;
+}
+.card-img:hover img{
+    transform: scale(1.1);
+}
+.card-img{
+    position: relative;
+}
+.card-top-right {
+    position: absolute;
+    background: linear-gradient(to right,#fc2547 50%, #ff5a00 100%);
+    padding: 10px;
+    border-radius: 0px 2px 0px 35px;
+}
+.card-top-right span{
+   color: white;
+   font-weight: 500;
+}
+.img-time {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-btn {
+    width: 600px;
+    border: solid 1px #fc2547;
+    color: #FFFFFF !important;
+    font-weight: 700;
+    padding: 10px 35px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    /* letter-spacing: 0.1em; */
+    text-align: center;
+    overflow: hidden;
+    transition: .8s ease;
+    text-decoration: none;
+    background-image: linear-gradient(to right,#fc2547 0%, #ff5a00 50%, #fc2547 100%);
+    background-size: 200% auto;
+}
+.more-food {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.heading {
+    color: #ffffff;
+    font-family: 'Grand Hotel', cursive;
+    font-size: 72px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.sub-heading {
+    background: linear-gradient(to right,#fc2547 50%, #ff5a00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.heading {
+    color: #ffffff;
+    font-family: 'Grand Hotel', cursive;
+    font-size: 72px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.apps-details {
+    width: 65%;
+    margin: auto;
+}
+.app-loc{
+    color: #FFFFFF;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.app-info .w-50{
+    transition-duration: 0.5s;
+    transition-property: all;
+}
+.app-info:hover .w-50{
+    margin-top: -15px;
+}
+.sub-heading {
+    background: linear-gradient(to right,#fc2547 50%, #ff5a00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.text, .text-2 {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+    opacity: .7;
+}
+.text .text-2 {
+    margin-top: 10px;
+}
+.heading {
+    color: #ffffff;
+    font-family: 'Grand Hotel', cursive;
+    font-size: 72px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.heading-area {
+    width: 80%;
+}
+.basic-info{
+    background-color: #1E1E1E;
+}
+.features{
+    color: white;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    padding-top: 50px;
+}
+.features h5{
+    font-size: 25px;
+}
+.features .icons{
+    font-size: 60px;
+}
+
+.features .part:hover{
+    color: red;
+    transition-duration: 0.5s;
+    transition-property: all;
+}
+.socail-icons ul li a, .socail-icons h5{
+  color: white;
+  font-size: 20px;  
+}
+.socail-icons ul li a:hover{
+    padding: 15px;
+    border-radius: 40%;
+    background-color: #e64949;
+    transition-duration: 0.5s;
+    transition-property: all;
+}
